@@ -1,4 +1,4 @@
-var businessHours = [9,10,11,12,13,14,15,16,17];
+var businessHours = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
 var currentHour = moment().hour();
 
 var timeDate = moment();
@@ -22,9 +22,10 @@ function startTimer() {
 // --- SET CURRENT TIME ---------------------
 function setCurrentTime() {
     var timeDate = moment();
-    let clockEl = $("#DateTime");
-    clockEl.text(timeDate.format('MMMM Do YYYY, h:mm:ss a'));
+    let clockEl = $("#currentDateElement");
+    clockEl.text("Time & Date:" + timeDate.format('MMMM Do YYYY, h:mm:ss a'));
 } 
+//-------------------------------------------
 
 function displayHours(){
     
@@ -42,13 +43,10 @@ function displayHours(){
                 workHours = businessHours[index] - 12 + " P.M";
             }
         }
+        col1.append(workHours)
+    ///////columm 2
 
-        // col1.append(workHours)
-
-        // if(currentHour > businessHours[index]){
-        //     textArea.addClass("past");
-        // }
-    
+    let col2 = $("<div class='col-sm-8'>");
 
         let savedText = localStorage.getItem("textarea"+index );
      
@@ -58,14 +56,24 @@ function displayHours(){
         textArea.text(savedText)
 
 
+        if(currentHour > businessHours[index]){
+            textArea.addClass("past");
 
-        let col2 = $("<div class='col-sm-8'>");
+        textArea.attr("readonly", "")
+        } else if(currentHour < businessHours[index]){
+            textArea.addClass("future")
+        } else if(currentHour == businessHours[index]){
+            textArea.addClass("present")
+        }
+
         col2.append(textArea);
 
 
         let button = $("<button>");
         button.addClass("saveBtn");
         button.text("Eileen");
+
+        ///// column 3
         let col3 = $("<div class='col-sm-2'>");
         col3.append(button);
 
@@ -76,6 +84,7 @@ function displayHours(){
 
 }
 
+// text area read only class
 
 displayHours();
 
