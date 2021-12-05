@@ -71,7 +71,8 @@ function displayHours(){
 
         let button = $("<button>");
         button.addClass("saveBtn");
-        button.text("Eileen");
+        button.text("Save");
+        
 
         ///// column 3
         let col3 = $("<div class='col-sm-2'>");
