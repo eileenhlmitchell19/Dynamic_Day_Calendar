@@ -29,8 +29,6 @@ I would like to learn how to have used STRINGIFY in my code. Next time I would l
 The code is written to include all hours of the day. Code was checked after hours and it breaks the code for any available hours, therefore wrote code to incorporate all hours.
 
 # Links
-![Calendar2](https://user-images.githubusercontent.com/92004![Calendar1](https://user-images.githubusercontent.com/92004866/144791403-66a33490-c822-4cd6-bdea-04d44d094271.jpg)
-866/144791394-35d69dd5-716f-48e5-8781-52166a069526.jpg)
 
 - [index.html](./index.html)
 - [script.js](./script.js)
