@@ -1,89 +1,35 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# DYNAMIC DAY CALENDAR
 
-## Your Task
+By: Eileen Mitchell
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+A DAY CALENDAR TO TRACK YOUR ACTIVITY AND SCHEDULE
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+# Technologies Used
 
-## User Story
+- HTML
+- CSS
+- JQUERY
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+# Description 
 
-## Acceptance Criteria
+This website allows users to create a day calendar to track you activity and schedule throughout the day. The calendar includes the time updated every second for accuracy. You may dynamically select timeslots for the hour that works for you. If it is a future hour, those times will appear green, present hours appear red, and past hours appear grey. Past hours are read only and you may not select times within them, since they have already passed. Once you save the data in the calendar, it will save locally and will appear the next time you open this page. 
 
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+This calendar was created dynamically and uses JQuery to create most of the elements within the file itself. HTML does exist but takes a backseat in this application. 
 
-The following animation demonstrates the application functionality:
+# Tools Used
 
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
+More use of for loops was used to develop the times for the calendar within this application. Other useful tools included local storage, bootstrap, else if statements, etc. I am most pleased with bootstrap, as it has allowed us to find new code and grab appropriate syntax to plug into our code and develop applications much faster than we would have for items that would have been rather difficult to create otherwise. Even if it is difficult, you can figure it out a bit easier after using bootstrap.
 
+# Alternative Code Options
 
-## Grading Requirements
+I would like to learn how to have used STRINGIFY in my code. Next time I would like to change it to include this. I originally created my code using static HTML and would like to have finished the code using static HTML to see how to finish that code with the static version as well. However the current code is good and I understand it and it works well.
 
-This homework is graded based on the following criteria: 
+# Links
 
-### Technical Acceptance Criteria: 40%
+- [index.html](./index.html)
+- [script.js](./script.js)
+- [style.css](./style.css)
 
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * Uses a date utility library to work with date and time
-
-### Deployment: 32%
-
-* Application deployed at live URL
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the homework instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+# Screen Shots
+![Project connection](Calendar1.jpg)
+![Project connection](Calendar2.jpg)
