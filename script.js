@@ -40,7 +40,7 @@ function displayHours(){
         //creating all rows and columns on the page
         let row = $("<div class='row'>");
         // --- COLUMN 1 ---------------------
-        let col1 = $("<div class='col-sm-1'>");
+        let column1 = $("<div class='col-sm-1'>");
 
         //creating text in the column to diplay AM and PM
         let workHours = businessHours[index]+ " A.M.";
@@ -52,14 +52,14 @@ function displayHours(){
                 workHours = businessHours[index] - 12 + " P.M";
             }
         }
-        col1.append(workHours)
+        column1.append(workHours)
          //-----------------------------------
     
     // --- COLUMN 2 --------------------------
-    let col2 = $("<div class='col-sm-9'>");
+    let column2 = $("<div class='col-sm-9'>");
         //saving the text to local storage using appropriate syntax "localStorage.getItem"
         let savedText = localStorage.getItem("textarea"+index );
-     
+        //text area is a class in css
         let textArea = $("<textarea>");
         textArea.attr('id', 'textarea' + index);
         textArea.addClass('form-control');
@@ -68,15 +68,17 @@ function displayHours(){
         // --- PAST PRESENT FUTURE CLASSES AND ATTRIBUTES -----------------
         if(currentHour > businessHours[index]){
             textArea.addClass("past");
-        //if the text area is in the past then it is a readonly area
+        //if the text area is in the past then it is a readonly area and will appear as GREY
         textArea.attr("readonly", "")
         } else if(currentHour < businessHours[index]){
+            // if the current time is less that whatever indexed business hours then those hours would be considered the future and will appear in the CSS file as GREEN
             textArea.addClass("future")
         } else {
+            // if the current time is less that whatever indexed business hours then those hours would be considered the future and will appear in the CSS file as RED
             textArea.addClass("present")
         }
 
-        col2.append(textArea);
+        column2.append(textArea);
 
         //adding class data and text to button
         let button = $("<button>");
@@ -85,11 +87,11 @@ function displayHours(){
         //-----------------------------------
 
         // --- COLUMN 3 ---------------------
-        let col3 = $("<div class='col-sm-2'>");
-        col3.append(button);
+        let column3 = $("<div class='col-sm-2'>");
+        column3.append(button);
 
-        row.append(col1, col2, col3)
-        $("#planner").append(row);
+        row.append(column1, column2, column3)
+        $("#timeBlocks").append(row);
          //-----------------------------------
     }
 }
