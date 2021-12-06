@@ -24,6 +24,10 @@ More use of for loops was used to develop the times for the calendar within this
 
 I would like to learn how to have used STRINGIFY in my code. Next time I would like to change it to include this. I originally created my code using static HTML and would like to have finished the code using static HTML to see how to finish that code with the static version as well. However the current code is good and I understand it and it works well.
 
+# Problems with the Code
+
+The code is written to include all hours of the day. Code was checked after hours and it breaks the code for any available hours, therefore wrote code to incorporate all hours.
+
 # Links
 
 - [index.html](./index.html)
