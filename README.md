@@ -40,6 +40,4 @@ The code is written to include all hours of the day. Code was checked after hour
 - [script.js](./script.js)
 - [style.css](./style.css)
 
-# Screen Shots
-![Project connection](Calendar1.jpg)
-![Project connection](Calendar2.jpg)
+
