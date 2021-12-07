@@ -30,14 +30,10 @@ The code is written to include all hours of the day. Code was checked after hour
 
 # Links
 
-![Calendar1](https://user-images.githubusercontent.com/92004866/144791818-357a4586-7194-4534-97a0-52806e31eab9.jpg)
-
-![Calendar2](https://user-images.githubusercontent.com/92004866/144791849-6d6f4c8c-8251-43a9-a58c-d908090d2160.jpg)
-
-
-
 - [index.html](./index.html)
 - [script.js](./script.js)
 - [style.css](./style.css)
 
-
+# Screen Shots
+![Project connection](Calendar1.jpg)
+![Project connection](Calendar2.jpg)
